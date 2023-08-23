@@ -8,3 +8,7 @@
 # Step 2 involves:
 # hooks.js
 # PlayingCardList.js
+
+# Step 3 involves:
+# hooks.js
+# PokeDex.js

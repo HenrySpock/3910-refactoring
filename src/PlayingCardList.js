@@ -36,9 +36,8 @@
 // Step 2. 
 
 import React from "react";
-import uuid from "uuid";
 import PlayingCard from "./PlayingCard";
-import { useAxios } from './hooks'; // Assuming hooks.js is in the same directory as PlayingCardList.js
+import { useAxios } from './hooks';  
 import "./PlayingCardList.css";
  
 function CardTable() {
@@ -56,7 +55,7 @@ function CardTable() {
       </div>
       <div className="PlayingCardList-card-area">
         {cards.map(cardData => (
-          <PlayingCard key={uuid()} front={cardData.cards[0].image} />
+          <PlayingCard key={cardData.id} front={cardData.cards[0].image} />
         ))}
       </div>
     </div>
@@ -64,3 +63,5 @@ function CardTable() {
 }
 
 export default CardTable;
+
+ 
